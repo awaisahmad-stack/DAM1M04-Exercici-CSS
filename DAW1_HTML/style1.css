@@ -1,0 +1,154 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    font-family: "Poppins", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f6fb;
+    color: #2b2d42;
+    line-height: 1.6;
+}
+
+/* Titles and links by selector (h1, h2, a) */
+h1 {
+    font-size: 2.2rem;
+    color: #1d3557;
+    margin-bottom: 0.2rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #457b9d;
+    margin-top: 1.5rem;
+}
+
+a {
+    color: #1d6fa5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Link hover style */
+a:hover {
+    color: #e63946;
+    text-decoration: underline;
+}
+
+/* Layout */
+header {
+    background-color: #1d3557;
+    padding: 1rem 2rem;
+}
+
+nav a {
+    color: #ffffff;
+    margin-right: 1.5rem;
+}
+
+nav a:hover {
+    color: #a8dadc;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Pseudo-elements ::before and ::after on titles */
+h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #e63946;
+    margin-top: 0.4rem;
+    border-radius: 2px;
+}
+
+h2::before {
+    content: "// ";
+    color: #a8dadc;
+}
+
+/* List items: :first-child and :last-child */
+li:first-child {
+    font-weight: 700;
+    color: #1d3557;
+}
+
+li:last-child {
+    font-style: italic;
+    color: #457b9d;
+}
+
+/* ---------- Academic training ---------- */
+
+/* id (#) + combined hierarchy (id > element) */
+#academic {
+    padding: 0;
+}
+
+#academic > li {
+    list-style: none;
+    background-color: #ffffff;
+    border-left: 5px solid #457b9d;
+    border-radius: 0 8px 8px 0;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Pseudo-element before each academic entry */
+#academic > li::before {
+    content: "\1F393  ";   /* graduation cap */
+}
+
+/* ---------- Knowledge ---------- */
+
+/* class (.) */
+.knowledge {
+    background-color: #ffffff;
+    border: 1px solid #d9e2ec;
+    border-radius: 10px;
+    padding: 1rem 2rem 1rem 3rem;
+}
+
+.knowledge > li {
+    margin-top: 0.6rem;
+}
+
+/* Pseudo-element after the items of the nested lists */
+.knowledge ul li::after {
+    content: " \2713";     /* check mark */
+    color: #2a9d8f;
+}
+
+/* Footer */
+footer {
+    background-color: #1d3557;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+footer a {
+    color: #a8dadc;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer p:last-child::after {
+    content: "  \2022  Thanks for visiting!";
+    color: #a8dadc;
+}

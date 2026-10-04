@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    font-family: "Poppins", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f6fb;
+    color: #2b2d42;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+h1 {
+    font-size: 2.4rem;
+    color: #1d3557;
+    margin-bottom: 0.2rem;
+}
+
+
+h2 {
+    font-size: 1.3rem;
+    color: #457b9d;
+    margin-top: 0.2rem;
+}
+
+
+a {
+    color: #1d6fa5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+a:hover {
+    color: #e63946;
+    text-decoration: underline;
+}
+
+
+
+
+header {
+    background-color: #1d3557;
+    padding: 1rem 2rem;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+
+hr {
+    border: none;
+    border-top: 2px solid #a8dadc;
+    margin: 0;
+}
+
+
+
+nav a {
+    color: #ffffff;
+    margin-right: 1.5rem;
+}
+
+nav a:hover {
+    color: #a8dadc;
+}
+
+
+.profile-photo {
+    border-radius: 50%;
+    border: 4px solid #a8dadc;
+    margin: 1rem 0;
+    display: block;
+}
+
+
+.highlight {
+    background-color: #fff3cd;
+    padding: 0.8rem 1rem;
+    border-left: 5px solid #ffb703;
+    border-radius: 4px;
+}
+
+
+#goals {
+    background-color: #ffffff;
+    border: 1px solid #d9e2ec;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+}
+
+li:first-child {
+    font-weight: 700;
+    color: #1d3557;
+}
+
+li:last-child {
+    font-style: italic;
+    color: #457b9d;
+}
+
+
+#skills > li {
+    list-style: none;
+    padding: 0.2rem 0;
+}
+
+
+#skills > li::before {
+    content: "\25B8  ";          
+    color: #e63946;
+}
+
+h1::after {
+    content: "";                 
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #e63946;
+    margin-top: 0.4rem;
+    border-radius: 2px;
+}
+
+h2::before {
+    content: "// ";
+    color: #a8dadc;
+}
+
+footer {
+    background-color: #1d3557;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+footer a {
+    color: #a8dadc;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer p:last-child::after {
+    content: "  \2022  Thanks for visiting!";
+    color: #a8dadc;
+}

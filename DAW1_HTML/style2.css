@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    font-family: "Poppins", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f6fb;
+    color: #2b2d42;
+    line-height: 1.6;
+}
+
+
+h1 {
+    font-size: 2.2rem;
+    color: #1d3557;
+    margin-bottom: 0.2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: #457b9d;
+    margin: 0 0 0.4rem 0;
+}
+
+a {
+    color: #1d6fa5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+a:hover {
+    color: #e63946;
+    text-decoration: underline;
+}
+
+
+header {
+    background-color: #1d3557;
+    padding: 1rem 2rem;
+}
+
+nav a {
+    color: #ffffff;
+    margin-right: 1.5rem;
+}
+
+nav a:hover {
+    color: #a8dadc;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+
+h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #e63946;
+    margin-top: 0.4rem;
+    border-radius: 2px;
+}
+
+h2::before {
+    content: "// ";
+    color: #a8dadc;
+}
+
+
+/* id (#) */
+#projects {
+    padding: 0;
+    counter-reset: project;
+}
+
+
+#projects > li {
+    list-style: none;
+    counter-increment: project;
+}
+
+/* Class (.) */
+.project {
+    background-color: #ffffff;
+    border-left: 5px solid #457b9d;
+    border-radius: 0 10px 10px 0;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Pseudo-element before each project: project number */
+.project::before {
+    content: "Project " counter(project);
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #e63946;
+    border-radius: 12px;
+    padding: 0.1rem 0.7rem;
+    margin-bottom: 0.4rem;
+}
+
+
+.project p::after {
+    content: " \2699";   
+    color: #a8dadc;
+}
+
+
+#projects > li:first-child {
+    border-left-color: #e63946;
+}
+
+#projects > li:last-child {
+    border-left-color: #2a9d8f;
+}
+
+/* Footer */
+footer {
+    background-color: #1d3557;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+footer a {
+    color: #a8dadc;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer p:last-child::after {
+    content: "  \2022  Thanks for visiting!";
+    color: #a8dadc;
+}
